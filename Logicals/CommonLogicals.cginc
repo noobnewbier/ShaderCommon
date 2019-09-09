@@ -1,5 +1,5 @@
-﻿#ifndef NOOBNEWBIER_INCLUDE
-#define NOOBNEWBIER_INCLUDE
+﻿#ifndef NOOBNEWBIER_INCLUDE_COMMON_LOGICALS
+#define NOOBNEWBIER_INCLUDE_COMMON_LOGICALS
 
 float4 WhenEqual(float4 x, float4 y) {
   return 1.0 - abs(sign(x - y));
@@ -63,13 +63,6 @@ float4 Xor(float4 a, float4 b) {
 
 float4 Not(float4 a) {
   return 1.0 - a;
-}
-
-
-//Noise
-float random (float2 uv)
-{
-    return frac(sin(dot(uv,float2(12.9898,78.233)))*43758.5453123);
 }
 
 #endif
